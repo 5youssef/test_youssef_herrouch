@@ -1,38 +1,195 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 500px) {
+  body {
+    background-color: #fff;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .App {
+    overflow-x: hidden;
   }
-  to {
-    transform: rotate(360deg);
+
+  /* style Header */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  .carousel-inner {
+    border-radius: 8px;
+  }
+  .logo {
+    margin-left: 35px;
+  }
+  .contentSearch {
+    display: flex;
+    align-items: center;
+  }
+  .Menu {
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    width: 90%;
+    height: 45px;
+    border-radius: 35px;
+
+    background-color: #fafafa;
+    /* background-color: #cac7c7; */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+  .Link-active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    background-color: #303189;
+    height: 45px;
+    padding-right: 14px;
+    font-size: 14px;
+    color: #fff;
+    width: 120px;
+    /* margin-right: 10px; */
+    font-family: "Roboto", sans-serif;
+  }
+  .Link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    color: #909090;
+    border-radius: 25px;
+    font-size: 14px;
+    padding-right: 14px;
+    /* margin-right: 5px; */
+    font-family: "Roboto", sans-serif;
+  }
+  .iconInfo {
+    margin-right: 4px;
+  }
+
+  /* style Slider */
+  .Slider {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .bigTitle {
+    text-align: center;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    color: #303189;
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  .global-btn {
+    background-color: #303189;
+    color: #fff;
+    margin: 40px auto;
+    border-radius: 35px;
+    font-size: 18px;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* style Events */
+  .Events {
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+    padding: 10px;
+    /* position: relative; */
+  }
+
+  .cardEvent {
+    width: 190px;
+    height: 300px;
+    position: relative;
+    margin: 20px;
+  }
+  .Events img {
+    width: 190px;
+    height: 300px;
+  }
+
+  .cardEvent:hover {
+    width: 210px;
+    height: 320px;
+    position: relative;
+    margin: 20px;
+  }
+  .Events img:hover {
+    width: 210px;
+    height: 320px;
+  }
+  .Events .textCardEvent {
+    position: absolute;
+    bottom: 0%;
+    left: 15px;
+    color: #fff;
+  }
+
+  .slide-btn {
+    background-color: #fff;
+    color: #303189;
+    margin: 0px auto;
+    border-radius: 35px;
+    border: none;
+    font-size: 18px;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* style Question */
+
+  .Question {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  .badge-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e0d4ce;
+    color: #303189;
+    border-radius: 35px;
+    border: none;
+    font-weight: bold;
+  }
+
+  .Footer {
+    background-color: #fff;
+    height: 50px;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  }
+
+  .Footer .Link-Active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    background-color: #e9e9f2;
+    padding: 5px 15px;
+  }
+  .Footer img {
+    width: 25px;
+  }
+
+  .text-Link-Active {
+    color: #303189;
+    margin-left: 5px;
+    margin-top: 3px;
   }
 }
